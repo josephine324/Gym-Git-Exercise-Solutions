@@ -1,4 +1,82 @@
 # Gym-Git-Exercise-Solutions
+* Bundle 1 Exercise  1( HISTORY )
+```bash
+ C:\Users\HP\OneDrive\Desktop\Git Exercises> ls 
+
+
+    Directory: C:\Users\HP\OneDrive\Desktop\Git Exercises
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2024-12-16   7:40 PM            241 index.html
+
+
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git add .
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git commit -m "rename a branch"
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git push origin main
+To https://github.com/josephine324/Gym-Git-Exercise-Solutions.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/josephine324/Gym-Git-Exercise-Solutions.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git pull origin main
+From https://github.com/josephine324/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git remote add origin https://github.com/josephine324/Gym-Git-Exercise-Solutions.git
+error: remote origin already exists.
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git branch
+* main
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git push origin main
+To https://github.com/josephine324/Gym-Git-Exercise-Solutions.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/josephine324/Gym-Git-Exercise-Solutions.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git pull origin main
+From https://github.com/josephine324/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git merge
+fatal: No remote for the current branch.
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git statul
+git: 'statul' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git init
+Reinitialized existing Git repository in C:/Users/HP/OneDrive/Desktop/Git Exercises/.git/
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git pull origin main
+From https://github.com/josephine324/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git push origin 
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
 * Bundle 2 Exercise 1
 ```bash
 git branch ft/bundle-2   
@@ -18,9 +96,6 @@ fatal: The current branch ft/bundle-2 has no upstream branch.
 To push the current branch and set the remote as upstream, use
 
     git push --set-upstream origin ft/bundle-2
-
-To have this happen automatically for branches without a tracking
-upstream, see 'push.autoSetupRemote' in 'git help config'.
 
 PS C:\Users\HP\OneDrive\Desktop\Git Exercises> git push --set-upstream origin ft/bundle-2
 Enumerating objects: 4, done.
@@ -81,4 +156,3 @@ Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/josephine324/Gym-Git-Exercise-Solutions.git
    f52fc6c..d5cf1b1  ft/srvice-redesign -> ft/srvice-redesign
 PS C:\Users\HP\OneDrive\Desktop\Git Exercises> 
-```
