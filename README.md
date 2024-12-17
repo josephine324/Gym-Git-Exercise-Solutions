@@ -116,10 +116,3 @@ git branch  ft/faq-page
 git revert 
 ```
 * Push the changes and create a new PR
-
-
-
-
-
-
-
